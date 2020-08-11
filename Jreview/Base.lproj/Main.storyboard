@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RLQ-rI-rhy">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WUz-qF-2ZU">
+                                <rect key="frame" x="106.66666666666669" y="426" width="201" height="44"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <state key="normal" title="  Write a Review  ">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="PushReviewScreen:" destination="BYZ-38-t0r" eventType="touchUpInside" id="udr-Kd-HeF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WUz-qF-2ZU" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9c9-sa-LaS"/>
+                            <constraint firstItem="WUz-qF-2ZU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Daf-Tr-A6B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VRV-ww-u6M"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="113"/>
+        </scene>
+        <!--Review View Controller-->
+        <scene sceneID="hDF-yw-1kq">
+            <objects>
+                <viewController id="RLQ-rI-rhy" customClass="ReviewViewController" customModule="Jreview" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RZQ-Wz-xMH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="dBA-Nk-6OQ">
+                                <rect key="frame" x="20" y="74" width="374" height="784"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="AWB-M6-PBT" userLabel="TitleStack">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="74"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Rate Samantha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BQ5-63-LB1">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="53.666666666666664"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We want your feedback!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zfk-ij-wY1">
+                                                <rect key="frame" x="0.0" y="53.666666666666671" width="374" height="20.333333333333329"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="aVz-SW-ZDK" userLabel="UserStack">
+                                        <rect key="frame" x="0.0" y="104" width="374" height="210"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="6pM-Pz-j8D">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="94.666666666666671"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="94.5" id="01v-TM-0OM"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Samantha Doe" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I5g-ge-pgX">
+                                                <rect key="frame" x="111.33333333333333" y="104.66666666666669" width="151.33333333333337" height="26.333333333333343"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="26.5" id="yJp-7m-vj6"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-0u-7QV" userLabel="Rate" customClass="StarRatingView" customModule="Jreview" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="141" width="374" height="69"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="rating">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="starColor">
+                                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="starRoundingRawValue">
+                                                        <integer key="value" value="0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w75-ZM-LEH" userLabel="Gratitude">
+                                        <rect key="frame" x="0.0" y="344" width="374" height="62"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="GIVE TAGS OF GRATITUDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qcd-GZ-pTh">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="18"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jJD-4m-c9I" userLabel="GratView" customClass="TagListView" customModule="Jreview" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="374" height="34"/>
+                                                <color key="tintColor" red="0.30199107800000002" green="1" blue="0.87760664470000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                                        <color key="value" red="0.93613845049427247" green="0.93613845049427247" blue="0.93613845049427247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="0.0"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                                        <real key="value" value="9"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                                        <real key="value" value="16"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                                        <color key="value" red="0.26171417619999998" green="0.28393759709999999" blue="0.77109924299999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="w1v-cJ-faL" userLabel="Feedback">
+                                        <rect key="frame" x="0.0" y="436" width="374" height="348"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WRITE FEEDBACK" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EK3-s1-ybr">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="19.333333333333332"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Here ..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="XFl-9f-o4q">
+                                                <rect key="frame" x="0.0" y="29.333333333333371" width="374" height="80"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="80" id="L4x-5L-oxK"/>
+                                                </constraints>
+                                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <stackView opaque="NO" tag="3" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="mkS-pC-ddU">
+                                                <rect key="frame" x="0.0" y="119.33333333333336" width="374" height="228.66666666666663"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RBV-17-nNg">
+                                                        <rect key="frame" x="0.0" y="0.0" width="374" height="75"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Report"/>
+                                                        <connections>
+                                                            <action selector="ReportBtn:" destination="RLQ-rI-rhy" eventType="touchUpInside" id="Vb4-ET-Xlb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y6M-rj-f1z">
+                                                        <rect key="frame" x="0.0" y="77" width="374" height="74.666666666666686"/>
+                                                        <color key="backgroundColor" red="0.26171417619999998" green="0.28393759709999999" blue="0.77109924299999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Submit">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="SubmitBtn:" destination="RLQ-rI-rhy" eventType="touchUpInside" id="ZbH-NC-4iZ"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sr7-TU-HGI">
+                                                        <rect key="frame" x="0.0" y="153.66666666666663" width="374" height="75"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                        <state key="normal" title="Cancel">
+                                                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="CancelBtn:" destination="RLQ-rI-rhy" eventType="touchUpInside" id="bbq-8b-6tY"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="aVz-SW-ZDK" firstAttribute="top" secondItem="dBA-Nk-6OQ" secondAttribute="top" constant="104" id="BID-BL-XEP"/>
+                                    <constraint firstItem="w1v-cJ-faL" firstAttribute="top" secondItem="dBA-Nk-6OQ" secondAttribute="top" constant="436" id="ppi-M8-PKU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dBA-Nk-6OQ" firstAttribute="centerX" secondItem="RZQ-Wz-xMH" secondAttribute="centerX" id="G7w-Sc-Nm3"/>
+                            <constraint firstItem="dBA-Nk-6OQ" firstAttribute="top" secondItem="dnj-mg-j7w" secondAttribute="top" constant="30" id="VPl-Bl-XS0"/>
+                            <constraint firstItem="dBA-Nk-6OQ" firstAttribute="leading" secondItem="dnj-mg-j7w" secondAttribute="leading" constant="20" id="blq-iv-5lZ"/>
+                            <constraint firstItem="dnj-mg-j7w" firstAttribute="bottom" secondItem="dBA-Nk-6OQ" secondAttribute="bottom" constant="4" id="r00-00-dvY"/>
+                            <constraint firstItem="dBA-Nk-6OQ" firstAttribute="centerX" secondItem="RZQ-Wz-xMH" secondAttribute="centerX" id="rgS-eB-F7W"/>
+                            <constraint firstItem="dnj-mg-j7w" firstAttribute="trailing" secondItem="dBA-Nk-6OQ" secondAttribute="trailing" constant="20" id="xUG-OX-dI2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dnj-mg-j7w"/>
+                    </view>
+                    <connections>
+                        <outlet property="CancelBtn" destination="Sr7-TU-HGI" id="wYf-3Q-gCC"/>
+                        <outlet property="RateStarView" destination="fUU-0u-7QV" id="IF6-op-Lxy"/>
+                        <outlet property="ReportBtn" destination="RBV-17-nNg" id="98n-Hd-lnw"/>
+                        <outlet property="ReviewTextField" destination="XFl-9f-o4q" id="RjG-eY-scl"/>
+                        <outlet property="StackView" destination="dBA-Nk-6OQ" id="lvs-cQ-7hT"/>
+                        <outlet property="SubmitBtn" destination="y6M-rj-f1z" id="bRq-bc-5lD"/>
+                        <outlet property="TagsView" destination="jJD-4m-c9I" id="u3l-5E-uxf"/>
+                        <outlet property="UserImage" destination="6pM-Pz-j8D" id="KVJ-Pc-dtp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BD6-Eb-KPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="873.91304347826099" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Logo" width="1024" height="1024"/>
+    </resources>
+</document>
