@@ -38,7 +38,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="113"/>
+            <point key="canvasLocation" x="-243" y="114"/>
         </scene>
         <!--Review View Controller-->
         <scene sceneID="hDF-yw-1kq">
@@ -87,7 +87,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fUU-0u-7QV" userLabel="Rate" customClass="StarRatingView" customModule="Jreview" customModuleProvider="target">
-                                                <rect key="frame" x="0.0" y="141" width="374" height="69"/>
+                                                <rect key="frame" x="19.666666666666657" y="141" width="335" height="69"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="rating">
                                                         <real key="value" value="0.0"/>
@@ -217,11 +217,14 @@
                         <outlet property="CancelBtn" destination="Sr7-TU-HGI" id="wYf-3Q-gCC"/>
                         <outlet property="RateStarView" destination="fUU-0u-7QV" id="IF6-op-Lxy"/>
                         <outlet property="ReportBtn" destination="RBV-17-nNg" id="98n-Hd-lnw"/>
+                        <outlet property="ReviewTargetNameLabel" destination="I5g-ge-pgX" id="LWS-UD-dcm"/>
                         <outlet property="ReviewTextField" destination="XFl-9f-o4q" id="RjG-eY-scl"/>
                         <outlet property="StackView" destination="dBA-Nk-6OQ" id="lvs-cQ-7hT"/>
                         <outlet property="SubmitBtn" destination="y6M-rj-f1z" id="bRq-bc-5lD"/>
                         <outlet property="TagsView" destination="jJD-4m-c9I" id="u3l-5E-uxf"/>
                         <outlet property="UserImage" destination="6pM-Pz-j8D" id="KVJ-Pc-dtp"/>
+                        <outlet property="subTitleLabel" destination="Zfk-ij-wY1" id="l5h-uD-EGo"/>
+                        <outlet property="titleLabel" destination="BQ5-63-LB1" id="obt-zy-L8S"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BD6-Eb-KPV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

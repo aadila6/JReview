@@ -7,33 +7,18 @@
 //
 
 import Foundation
-fileprivate struct Defaults {
-    
-    static let titleLabel = "Rate Adila"
-    static let titleDetailLabel = "We want your feedback!"
-//    static let titleFooterLabel = "We want your feedback!"
-    static let feedBackText = "Enter your opinion here"
-    static let errorMessageLabel = "Phone number provided is invalid"
 
-    #if DEBUG
-        #if targetEnvironment(simulator)
-            static let defaultNumberValue = "557072306"
-        #else
-            static let defaultNumberValue = "557072305"
-        #endif
-    #else
-        static let defaultNumberValue = String()
-    #endif
-}
 
-class RegisterViewModel {
-    
+class ReviewViewModel {
     // MARK: - Properties
-    var titleText: String { return Defaults.titleLabel }
-    var detailText: String { return Defaults.titleDetailLabel }
-//    var footerText: String { return Defaults.titleFooterLabel }
-    var placeholderText: String { return Defaults.feedBackText }
-    var errorMessage: String { return Defaults.errorMessageLabel }
-        
-
+    
+    var titleLabel: String = "Rate "
+    var detailText: String = "We want your feedback!"
+    var feedBackText : String = "Enter your opinion here"
+    var sampleTags: [String] = ["#greattutee", "#excellent", "#greatsession","#awesome","#fun","#nice","#thankyou"]
+    var UserRateData : Float = 0
+    var UserReviewTargetName : String = ""
+    var UserTaggedData : [String] = []
+    var UserReviewData : String = ""
+    
 }

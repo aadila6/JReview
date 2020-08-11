@@ -11,7 +11,7 @@ import UIKit
 @objc public protocol TagListViewDelegate {
     @objc optional func tagPressed(_ title: String, tagView: TagView, sender: TagListView) -> Void
     @objc optional func tagRemoveButtonPressed(_ title: String, tagView: TagView, sender: TagListView) -> Void
-
+    
 }
 
 @IBDesignable
@@ -32,7 +32,7 @@ open class TagListView: UIView {
             }
         }
     }
-
+    
     @IBInspectable open dynamic var tagLineBreakMode: NSLineBreakMode = .byTruncatingMiddle {
         didSet {
             tagViews.forEach {
@@ -233,7 +233,7 @@ open class TagListView: UIView {
             $0.removeFromSuperview()
         }
         rowViews.removeAll(keepingCapacity: true)
-
+        
         var isRtl: Bool = false
         
         if #available(iOS 10.0, tvOS 10.0, *) {
@@ -279,7 +279,7 @@ open class TagListView: UIView {
                 
                 rowViews.append(currentRowView)
                 addSubview(currentRowView)
-
+                
                 tagView.frame.size.width = min(tagView.frame.size.width, frameWidth)
             }
             
@@ -360,7 +360,7 @@ open class TagListView: UIView {
         
         return tagView
     }
-
+    
     @discardableResult
     open func addTag(_ title: String) -> TagView {
         defer { rearrangeViews() }
@@ -390,13 +390,13 @@ open class TagListView: UIView {
         }
         return tagViews
     }
-
+    
     @discardableResult
     open func insertTag(_ title: String, at index: Int) -> TagView {
         return insertTagView(createNewTagView(title), at: index)
     }
     
-
+    
     @discardableResult
     open func insertTagView(_ tagView: TagView, at index: Int) -> TagView {
         defer { rearrangeViews() }
@@ -434,7 +434,7 @@ open class TagListView: UIView {
         let views: [UIView] = tagViews + tagBackgroundViews
         views.forEach { $0.removeFromSuperview() }
     }
-
+    
     open func selectedTags() -> [TagView] {
         return tagViews.filter { $0.isSelected }
     }
