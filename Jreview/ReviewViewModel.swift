@@ -12,7 +12,7 @@ import Foundation
 class ReviewViewModel {
     // MARK: - Properties
     
-    var titleLabel: String = "Rate "
+    var titleLabel: String = "Rate"
     var detailText: String = "We want your feedback!"
     var feedBackText : String = "Enter your opinion here"
     var sampleTags: [String] = ["#greattutee", "#excellent", "#greatsession","#awesome","#fun","#nice","#thankyou"]

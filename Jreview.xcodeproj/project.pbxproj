@@ -74,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				C5FDB1A824E1DE8000535F34 /* AppDelegate.swift */,
+				C5FDB1AA24E1DE8000535F34 /* SceneDelegate.swift */,
 				C5FDB1D124E23F3200535F34 /* CloseButton.swift */,
 				C5FDB1D024E23F3200535F34 /* TagListView.h */,
 				C5FDB1D224E23F3200535F34 /* TagListView.swift */,
@@ -81,7 +82,6 @@
 				C5FDB1C724E2075700535F34 /* StarRatingStackView.swift */,
 				C5FDB1C824E2075700535F34 /* StarRatingView.swift */,
 				C5FDB1C624E2075600535F34 /* StarRatingStackView.xib */,
-				C5FDB1AA24E1DE8000535F34 /* SceneDelegate.swift */,
 				C5FDB1B124E1DE8300535F34 /* Assets.xcassets */,
 				C5FDB1B324E1DE8300535F34 /* LaunchScreen.storyboard */,
 				C5FDB1AC24E1DE8000535F34 /* ViewController.swift */,
